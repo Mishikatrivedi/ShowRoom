@@ -1,0 +1,32 @@
+.body {
+    background-color: black;
+  }
+  .colorStyle{
+    color: #23abbd;
+  }
+  /* animation */
+#helpIcon{
+    position:fixed;
+    bottom: 50px;
+    right: 45px;
+    cursor: pointer;
+    z-index: 1000;
+    width: 20px;
+    height: 20px;
+    animation: moveIcon 5s infinite alternate;
+}
+@keyframes moveIcon {
+    0%{
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+      }
+    100% {
+        transform: translateY(0);
+      }
+}
+#helpIconImage{
+    width: 50px;
+    height: 50px;
+}
