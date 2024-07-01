@@ -1,9 +1,14 @@
 .body {
     background-color: black;
+    padding-top: 70px;
   }
   .colorStyle{
     color: #23abbd;
   }
+.navbar-custom{
+    border: 2px solid;
+    background-color: black;
+}
   /* animation */
 #helpIcon{
     position:fixed;
