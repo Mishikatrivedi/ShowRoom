@@ -9,6 +9,19 @@
     border: 2px solid;
     background-color: black;
 }
+.card{
+    background-color: black;
+}
+.cardTag{
+    text-decoration-color: rgb(145, 120, 120);
+    color: rgb(145, 120, 120);
+}
+.center-text{
+    text-align: center;
+}
+.underline{
+    text-decoration: underline;
+}
   /* animation */
 #helpIcon{
     position:fixed;
