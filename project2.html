@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Web Technologies Assignment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .body {
+        background-color: black;
+      }
+    </style>
+    <script src="index.js" id="demo"></script>
+  </head>
+
+  <body class="body">
+    <br />
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-dark" data-bs-theme="dark">
+      <div class="container-fluid" style="background-color: black">
+        <a
+          class="navbar-brand"
+          href="#"
+          style="color: rgb(145, 120, 120)"
+          style="font-size: xx-large"
+          >Pooja Trading Co.</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+                style="color: rgb(145, 120, 120)"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: rgb(145, 120, 120)"
+                >Features</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: rgb(145, 120, 120)"
+                >Pricing</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: rgb(145, 120, 120)"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex" role="search" method="POST">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Enter Name"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              REGISTER
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <br />
+    <br />
+    <!-- carousel -->
+    <div
+      id="carouselExampleAutoplaying"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="house.jpg" class="d-block w-100" height="600px" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="bathrom.avif"
+            class="d-block w-100"
+            height="600px"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img src="paint.jpg" class="d-block w-100" height="600px" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <br />
+    <br />
+    <!-- intro -->
+    <div style="color: bisque">
+      <p style="font-size: large">
+        Building materials are the raw materials used to build, renovate, or
+        enhance any physical structure. They are the building blocks of our
+        built environment and play a crucial role in shaping its strength,
+        durability, and overall appearance. This field requires a thorough
+        knowledge of a wide variety of applications and specialized knowledge.
+        We focus on quality and cost effectiveness for building projects.
+      </p>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <h1 style="text-align: center; color: bisque"><u>PRODUCTS</u></h1>
+
+    <br />
+    <br />
+    <!-- card0 -->
+    <div class="card-group">
+      <div class="card border-secondary mb-3" style="background-color: black">
+        <a href="#TAPS" style="text-decoration-color: rgb(145, 120, 120)">
+          <div class="card-body">
+            <h3 class="card-title" style="color: rgb(145, 120, 120)">TAPS</h3>
+
+            <img src="tap2.jpg" width="120px" height="120px" />
+          </div>
+        </a>
+      </div>
+      <div class="card border-secondary mb-3" style="background-color: black">
+        <a
+          href="#TOILET SEATS"
+          style="text-decoration-color: rgb(145, 120, 120)"
+        >
+          <div class="card-body">
+            <h3 class="card-title" style="color: rgb(145, 120, 120)">
+              TOILET SEAT
+            </h3>
+            <br />
+            <img src="toiletseat.png" width="100px" height="110px" />
+          </div>
+        </a>
+      </div>
+      <div class="card border-secondary mb-3" style="background-color: black">
+        <a href="#BATH" style="text-decoration-color: rgb(145, 120, 120)">
+          <div class="card-body">
+            <h3 class="card-title" style="color: rgb(145, 120, 120)">
+              BATH ACCESSORIES
+            </h3>
+            <img src="bath0.jpg" width="160px" height="140px" />
+          </div>
+        </a>
+      </div>
+      <div class="card border-secondary mb-3" style="background-color: black">
+        <a href="#WASHBASIN" style="text-decoration-color: rgb(145, 120, 120)">
+          <div class="card-body">
+            <h3 class="card-title" style="color: rgb(145, 120, 120)">
+              WASHBASIN
+            </h3>
+            <br />
+            <img src="dhruvbasin.png" width="170px" height="140px" />
+          </div>
+        </a>
+      </div>
+      <div class="card border-secondary mb-3" style="background-color: black">
+        <a
+          href="#PAINTS AND BRUSHES"
+          style="text-decoration-color: rgb(145, 120, 120)"
+        >
+          <div class="card-body">
+            <h3 class="card-title" style="color: rgb(145, 120, 120)">
+              PAINTS AND BRUSHES
+            </h3>
+
+            <img src="brush.png" width="110px" height="80px" />
+          </div>
+        </a>
+      </div>
+      <div class="card border-secondary mb-3" style="background-color: black">
+        <a href="#SHOWERS" style="text-decoration-color: rgb(145, 120, 120)">
+          <div class="card-body">
+            <h3 class="card-title" style="color: rgb(145, 120, 120)">
+              SHOWERS
+            </h3>
+            <br />
+            <img src="sho1.png" width="120px" height="100px" />
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1 id="TAPS" style="color: rgb(145, 120, 120); text-align: center">
+      TAPS
+    </h1>
+
+    <br />
+    <br />
+    <div class="row row-cols-1 row-cols-md-5 g-4">
+      <div class="col">
+        <div class="card h-100" style="background-color: black">
+          <img src="tap11.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">ORB 1050 11B</h5>
+            <p class="card-text">PRICE:2950/-</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: black">
+          <img src="tap12.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">ORB 105005B</h5>
+            <p class="card-text">PRICE:4050</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: black">
+          <img src="tap13.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">ORB 105055K</h5>
+            <p class="card-text">PRICE:700</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: black">
+          <img src="tap14.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">ORB-105119</h5>
+            <p class="card-text">PRICE:4450</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: black">
+          <img src="tap15.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">ORB-105149</h5>
+            <p class="card-text">PRICE:3450</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1 id="TOILET SEATS" style="color: rgb(145, 120, 120); text-align: center">
+      TOILET SEATS
+    </h1>
+
+    <br />
+    <br />
+    <div class="row row-cols-1 row-cols-md-5 g-4">
+      <div class="col">
+        <div class="card h-100" style="background-color: black">
+          <img src="ts11.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">ORS-WHT-105951NPP Wall Hung WC</h5>
+            <p class="card-text">PRICE:4950</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: black">
+          <img src="ts12.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">AIS-WHT-101551SNPPSM</h5>
+            <p class="card-text">PRICE:3500</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: black">
+          <img src="ts13.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">AIS-WHT-101851S220NPPSM</h5>
+            <p class="card-text">PRICE:10000</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: black">
+          <img src="ts14.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">AIS-WHT-101351NPPSMZ</h5>
+            <p class="card-text">PRICE:7900</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: black">
+          <img src="ts15.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">AIS-WHT-101351NPPSMZ</h5>
+            <p class="card-text">PRICE:7900</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1 id="BATH" style="color: rgb(145, 120, 120); text-align: center">
+      BATH ACCESSORIES
+    </h1>
+
+    <br />
+    <br />
+    <div class="row row-cols-1 row-cols-md-5 g-4">
+      <div class="col">
+        <div class="card h-100" style="background-color: black">
+          <img src="bath1.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">AEC-1181NA</h5>
+            <p class="card-text">PRICE:2925</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: black">
+          <img src="bath2.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">AEC-1151N</h5>
+            <p class="card-text">PRICE:700</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: black">
+          <img src="bath3.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">AEC-1133</h5>
+            <p class="card-text">PRICE:1025</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: black">
+          <img src="bath4.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">AEC-1121N</h5>
+            <p class="card-text">PRICE:675</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: black">
+          <img src="bath5.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">AEC-1111N</h5>
+            <p class="card-text">PRICE:1150</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1 id="WASHBASIN" style="color: rgb(145, 120, 120); text-align: center">
+      WASHBASIN
+    </h1>
+
+    <br />
+    <br />
+    <div class="row row-cols-1 row-cols-md-5 g-4">
+      <div class="col">
+        <div class="card h-100" style="background-color: black">
+          <img src="wb1.jpg" class="card-img-top" alt="..." height="282px" />
+          <div class="card-body">
+            <h5 class="card-title">A257B-K15</h5>
+            <p class="card-text">PRICE:9600</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: black">
+          <img src="wb2.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">AIS-WHT-101901</h5>
+            <p class="card-text">PRICE:2425</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: black">
+          <img src="wb3.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">AIS-WHT-101903</h5>
+            <p class="card-text">PRICE:2800</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: black">
+          <img src="wb4.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">AIS-WHT-101801</h5>
+            <p class="card-text">PRICE:1750</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: black">
+          <img src="wb5.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">AIS-WHT-101801</h5>
+            <p class="card-text">PRICE:1750</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1
+      id="PAINTS AND BRUSHES"
+      style="color: rgb(145, 120, 120); text-align: center"
+    >
+      PAINTS AND BRUSHES
+    </h1>
+
+    <br />
+    <br />
+    <div class="row row-cols-1 row-cols-md-5 g-4">
+      <div class="col">
+        <div class="card h-100" style="background-color: black">
+          <img src="pb5.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">ASIAN PAINTS</h5>
+            <!-- <p class="card-text">This is a short card.</p> -->
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: black">
+          <img src="pb4.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">NEROLAC PAINT+</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: black">
+          <img src="pb3.jpg" class="card-img-top" alt="..." height="192px" />
+          <div class="card-body">
+            <h5 class="card-title">DULUX</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: black">
+          <img src="PB2.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">ROLLER BRUSH</h5>
+            <p class="card-text">PRICE:150</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: black">
+          <img src="pb1.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">BRUSH</h5>
+            <p class="card-text">PRICE:150</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1 id="SHOWERS" style="color: rgb(145, 120, 120); text-align: center">
+      SHOWERS
+    </h1>
+
+    <br />
+    <br />
+    <div class="row row-cols-1 row-cols-md-5 g-4">
+      <div class="col">
+        <div class="card h-100" style="background-color: black">
+          <img src="sho11.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">EOS-542N</h5>
+            <p class="card-text">PRICE:650</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: black">
+          <img src="sho12.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">EOS-491</h5>
+            <p class="card-text">PRICE:875</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: black">
+          <img src="sho13.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">EOS-1995</h5>
+            <p class="card-text">PRICE:1600</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: black">
+          <img src="sho14.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">SAE-1931SH555</h5>
+            <p class="card-text">PRICE:2250</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: black">
+          <img src="sho15.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">ALE-BLC-593</h5>
+            <p class="card-text">PRICE:1025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
