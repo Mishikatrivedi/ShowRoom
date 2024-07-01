@@ -100,4 +100,12 @@ navLinks.forEach((link) => {
     // makes the scrolling smooth and animated, rather than instantaneous.
   });
 });
+
+// help icon functionality
+const helpIcon = document.getElementById('helpIcon');
+const phoneNumber = '9644208491';
+const helpMessage = `For assistance , call ${phoneNumber}.`;
+helpIcon.addEventListener('click' , function(){
+    alert(helpMessage);
+});
   });
