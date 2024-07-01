@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const changeBgColorButton = document.createElement('button');
     changeBgColorButton.innerText = 'Change Background Color';
     changeBgColorButton.style.position = 'fixed';
-    changeBgColorButton.style.top = '10px';
+    changeBgColorButton.style.top = '75px';
     changeBgColorButton.style.right = '10px';
     changeBgColorButton.className = 'btn btn-primary';
     document.body.appendChild(changeBgColorButton);
@@ -103,9 +103,14 @@ navLinks.forEach((link) => {
 
 // help icon functionality
 const helpIcon = document.getElementById('helpIcon');
+const contact = document.getElementById('contact');
 const phoneNumber = '9644208491';
 const helpMessage = `For assistance , call ${phoneNumber}.`;
+const contactMessage = `For contact , call ${phoneNumber}.`;
 helpIcon.addEventListener('click' , function(){
     alert(helpMessage);
+});
+contact.addEventListener('click' , function(){
+    alert(contactMessage);
 });
   });
