@@ -1,7 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Change background color of the body when a button is clicked
+  document.getElementById('submitbtn').addEventListener('click', function() {
+    console.log("entered in the click");
+    window.location.href = 'second.html';
+  });
+  // Change background color of the body when a button is clicked
     const changeBgColorButton = document.createElement('button');
-    changeBgColorButton.innerText = 'Change Background Color';
+    changeBgColorButton.innerText = 'Dark/Ligth Theme';
     changeBgColorButton.style.position = 'fixed';
     changeBgColorButton.style.top = '75px';
     changeBgColorButton.style.right = '10px';
@@ -9,20 +13,33 @@ document.addEventListener("DOMContentLoaded", function() {
     document.body.appendChild(changeBgColorButton);
   
     changeBgColorButton.addEventListener('click', function() {
-      document.body.style.backgroundColor = document.body.style.backgroundColor === 'black' ? 'white' : 'black';
+       // Use getComputedStyle to get the current background color
+       const currentBgColor = window.getComputedStyle(document.body).backgroundColor;
+
+       // Determine the new background color
+       const newBgColor = currentBgColor === 'rgb(0, 0, 0)' ? 'white' : 'black';
+      //const newBgColor = document.body.style.backgroundColor === 'black' ? 'white' : 'black';
+      document.body.style.backgroundColor = newBgColor;
+
       const formControls = document.querySelectorAll('.form-control');
       formControls.forEach(control => {
-        control.style.backgroundColor = document.body.style.backgroundColor === 'black' ? 'grey' : 'white';
-        control.style.borderColor = document.body.style.backgroundColor === 'black' ? 'white' : 'blue';
+        control.style.backgroundColor = newBgColor === 'black' ? 'grey' : 'white';
+        control.style.borderColor = newBgColor === 'black' ? 'white' : 'blue';
       });
+      const navbar = document.querySelector('.navbar-custom');
+        if (navbar) {
+          // Use getComputedStyle to get the current navbar background color
+          const currentNavbarBgColor = window.getComputedStyle(navbar).backgroundColor;
+          const newNavbarBgColor = currentNavbarBgColor === 'rgb(0, 0, 0)' ? 'white' : 'black';
+          navbar.style.backgroundColor = newNavbarBgColor;
+        }
     });
-  
     // Display an alert when the form is submitted
-    const form = document.querySelector('form');
-    form.addEventListener('submit', function(event) {
-      event.preventDefault();
-      alert('Form submitted! Name: ' + form.querySelector('input[type="search"]').value);
-    });
+    // const form = document.querySelector('form');
+    // form.addEventListener('submit', function(event) {
+    //   event.preventDefault();
+    //   alert('Form submitted! Name: ' + form.querySelector('input[type="search"]').value);
+    // });
   
     // Enhance carousel functionality
     const carouselElement = document.getElementById('carouselExampleAutoplaying');
