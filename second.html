@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - SignUp Page</title>
+    <link rel="icon" href="./Assets/loginFavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="second.css">
+    <link rel="stylesheet" href="secondindex.css">
+    <script src="second.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div id="text" class="text">Sign Up</div>
+            <div class="underline"></div>
+        </div>
+        <div class="inputs">
+            <div id="userNameInput" class="input">
+            <img src="Assets/user.png" alt="" />
+            <input type="text" placeholder='Enter Name'/>
+            </div>
+            
+            <div class="input">
+                <img src="Assets/email.png" alt="" />
+                <input type="email" placeholder='Enter Email-id'/>
+            </div>
+            <div class="input">
+                <img src="Assets/password.png" alt="" />
+                <input type="password" placeholder='Enter password'/>
+            </div>
+        </div>
+        
+        <div id="forgot-password" class="forgot-password">Lost Password? <span>Click Here !</span></div>
+        
+        <div class="submit-container">
+            <!--  provide dynamically the class using ternary operator -->
+            <div id="signbtn" class="submit" onClick="SignUp()">Sign Up</div>
+            <div id="logbtn" class="submit" onClick="Login()">Login</div>
+        </div>
+    </div>
+</body>
+</html>
