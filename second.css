@@ -47,6 +47,8 @@
     margin: 0px 30px;
     width: 40px;
     height: 40px;
+    border-radius: 50%;
+    opacity: 0.8;
 }
 .input input{
     height: 50px;
