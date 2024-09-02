@@ -1,7 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
+  //switching to next page of Login/Sign-up
   document.getElementById('submitbtn').addEventListener('click', function() {
     console.log("entered in the click");
     window.location.href = 'second.html';
+  });
+  //switching to pricing page
+  document.getElementById('pricing').addEventListener('click',function(){
+    window.location.href = 'pricing.html';
   });
   // Change background color of the body when a button is clicked
     const changeBgColorButton = document.createElement('button');
